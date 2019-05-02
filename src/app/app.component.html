@@ -1,0 +1,32 @@
+<mat-sidenav-container class="all-wrap">
+  <mat-sidenav-content class="page-wrap">
+    <mat-toolbar fxLayout="row" color="primary">
+      <div fxFlex="10" fxLayoutAlign="left">
+        <img src="../assets/bank.svg" height="30" width="30">
+        <span class="application-title">
+          <h1>{{ title }}</h1>
+        </span>
+      </div>
+      <div fxFlex="80" fxLayoutAlign="center">
+      </div>
+      <div fxFlex="10" fxLayoutAlign="end" class="viya-ready-msg">
+        <span [ngClass]="viyaConnection"></span>
+        <span>{{ viyaConnection }}</span>
+      </div>
+    </mat-toolbar>
+
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+
+    <footer class="page-footer font-small primary-bg footer" fxLayout="row">
+      <div fxFlex="50" fxLayoutAlign="left">
+        ©2019&nbsp;<a href="http://www.sas.com" target="_blank">SAS Institute</a>; designed by the SAS KYC Team (<a href="mailto:clemens.knobloch@sas.com">Clemens</a>,&nbsp;<a href="mailto:olaf.passchier@sas.com">Olaf</a>,&nbsp;<a href="mailto:paul.spoormans@sas.com">Paul</a>,&nbsp;<a href="mailto:jari.sundell@sas.com">Jari</a>,&nbsp;<a href="mailto:joao.oliveira@sas.com">João</a>,&nbsp;<a href="mailto:eugene.vankampen@sas.com">Eugène</a>)
+      </div>
+      <div fxFlex="50" fxLayoutAlign="end">
+        <img src="../assets/SAS_logo.png">
+      </div>
+    </footer>
+  </mat-sidenav-content>
+  <!-- <app-messages></app-messages> -->
+</mat-sidenav-container>

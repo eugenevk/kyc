@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Pre-built Angular Material Themes
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+    // font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+}
+
+button:active, button:focus {
+    border: 0 !important;
+    outline: none !important;
+}
+
+.button-margin {
+    margin-right: 10px !important;
+}
+
+h2 {
+    color: #673AB7;
+}
+
+h5 {
+    color: #673AB7;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+html, body {
+    height: 100%;
+}
+
+mat-form-field {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+h1.mat-dialog-title {
+    background-color: #673AB7;
+    border-radius: 3px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.icon-button:focus {
+    border: 0;
+    outline: none;
+}
+
+.mat-input-element {
+    height: 22px;
+}
+
+.mat-select-value {
+    height: 16px;
+}
+
+.primary {
+    color: #673AB7;
+}
+
+.primary-bg {
+    background-color: #673AB7;
+    color: white;
+}
+
+.progress-bar {
+    background-color: white;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.progress-margin {
+    margin: 0 10px;
+}
+
+.progress-spinner {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.radio-group-label {
+    margin-right: 10px;
+}
+
+.radio-option-label {
+    margin-right: 10px;
+}
+
+.valign {
+    vertical-align: top;
+}

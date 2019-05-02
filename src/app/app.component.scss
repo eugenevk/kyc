@@ -1,0 +1,59 @@
+.all-wrap {
+    min-height: 100vh; // same height as browser window height
+}
+
+.application-title {
+    padding-left: 10px;
+}
+
+.Connected {
+    background-color: #B9D715;
+    border-radius: 50%;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 9px;
+    width: 15px;
+}
+
+.content {
+    background: url('../assets/background.jpg');
+    flex: 1; // child will set to an equal size inside the container
+}
+
+.Disconnected {
+    background-color: rgb(172, 29, 29);
+    border-radius: 50%;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 9px;
+    width: 15px;
+}
+
+.footer {
+    padding: 5px;
+}
+
+/* Make the component injected by <router-outlet> full height: */
+main {
+    display: flex;
+    flex-direction: column;
+
+    // Select all direct descendants only of the <main> element
+    // that are not <router-outlet> elements:
+    > *:not(router-outlet) {
+
+        flex: 1; // child will set to an equal size inside the container
+        display: block;
+    }
+}
+
+.page-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; // same height as browser window height
+}
+
+.viya-ready-msg {
+    color: white;
+    font-size: 14px;
+}

@@ -1,0 +1,321 @@
+{
+	"api_version": "0.4",
+	"results": {
+		"companies": [{
+			"company": {
+				"name": "SPARK NEW ZEALAND LIMITED",
+				"company_number": "328287",
+				"jurisdiction_code": "nz",
+				"incorporation_date": "1987-02-24",
+				"dissolution_date": null,
+				"company_type": "NZ Limited Company",
+				"registry_url": "http://www.business.govt.nz/companies/app/ui/pages/companies/328287/detail",
+				"branch": null,
+				"branch_status": null,
+				"inactive": false,
+				"current_status": "Registered",
+				"created_at": "2011-06-16T01:27:26+00:00",
+				"updated_at": "2018-11-24T09:48:30+00:00",
+				"retrieved_at": "2018-11-14T15:15:24+00:00",
+				"opencorporates_url": "https://opencorporates.com/companies/nz/328287",
+				"previous_names": [{
+					"company_name": "TELECOM CORPORATION OF NEW ZEALAND LIMITED",
+					"start_date": "1987-02-24",
+					"end_date": "2014-08-07"
+				}],
+				"source": {
+					"publisher": "Ministry of Business, Innovation & Employment NZBI API",
+					"url": "https://api.business.govt.nz",
+					"retrieved_at": "2018-11-14T15:15:24+00:00"
+				},
+				"registered_address": {
+					"street_address": "Level 2, Spark City, 167 Victoria Street West, Auckland",
+					"locality": null,
+					"region": null,
+					"postal_code": "1010",
+					"country": "NZ"
+				},
+				"registered_address_in_full": "Level 2, Spark City, 167 Victoria Street West, Auckland, 1010",
+				"industry_codes": [],
+				"restricted_for_marketing": null,
+				"native_company_number": null
+			}
+		},
+		{
+			"company": {
+				"name": "CDCF SLAB INVESTMENTS LIMITED",
+				"company_number": "1040796",
+				"jurisdiction_code": "nz",
+				"incorporation_date": "2000-06-06",
+				"dissolution_date": "2012-11-12",
+				"company_type": "NZ Limited Company",
+				"registry_url": "http://www.business.govt.nz/companies/app/ui/pages/companies/1040796/detail",
+				"branch": null,
+				"branch_status": null,
+				"inactive": true,
+				"current_status": "Removed",
+				"created_at": "2011-06-16T05:34:21+00:00",
+				"updated_at": "2018-07-23T06:11:27+00:00",
+				"retrieved_at": "2018-07-11T15:01:01+00:00",
+				"opencorporates_url": "https://opencorporates.com/companies/nz/1040796",
+				"previous_names": [],
+				"source": {
+					"publisher": "Ministry of Business, Innovation & Employment NZBI API",
+					"url": "https://api.business.govt.nz",
+					"retrieved_at": "2018-07-11T15:01:01+00:00"
+				},
+				"registered_address": {
+					"street_address": "Piccadilly House, 74 New North Road, Eden Terrace, Auckland",
+					"locality": null,
+					"region": null,
+					"postal_code": null,
+					"country": "NZ"
+				},
+				"registered_address_in_full": "Piccadilly House, 74 New North Road, Eden Terrace, Auckland",
+				"industry_codes": [],
+				"restricted_for_marketing": null,
+				"native_company_number": null
+			}
+		},
+		{
+			"company": {
+				"name": "GOLDMAN SACHS INTERNATIONAL",
+				"company_number": "02263951",
+				"jurisdiction_code": "gb",
+				"incorporation_date": "1988-06-02",
+				"dissolution_date": null,
+				"company_type": "private unlimited company",
+				"registry_url": "https://beta.companieshouse.gov.uk/company/02263951",
+				"branch": null,
+				"branch_status": null,
+				"inactive": false,
+				"current_status": "Active",
+				"created_at": "2010-10-22T09:03:06+00:00",
+				"updated_at": "2018-12-01T10:54:51+00:00",
+				"retrieved_at": "2018-12-01T10:54:46+00:00",
+				"opencorporates_url": "https://opencorporates.com/companies/gb/02263951",
+				"previous_names": [{
+					"company_name": "TRUSHELFCO (NO.1266) LIMITED",
+					"start_date": "1988-06-02",
+					"end_date": "1988-09-21"
+				}],
+				"source": {
+					"publisher": "UK Companies House",
+					"url": "http://xmlgw.companieshouse.gov.uk/",
+					"terms": "UK Crown Copyright",
+					"retrieved_at": "2018-12-01T10:54:46+00:00"
+				},
+				"registered_address": {
+					"street_address": "Peterborough Court 133 Fleet Street",
+					"locality": "London",
+					"region": null,
+					"postal_code": "EC4A 2BB",
+					"country": "United Kingdom"
+				},
+				"registered_address_in_full": "Peterborough Court 133 Fleet Street, London, EC4A 2BB",
+				"industry_codes": [{
+					"industry_code": {
+						"code": "64.99/9",
+						"description": "Other financial , except insurance and pension funding, (not including security dealing on own account and factoring) n.e.c.",
+						"code_scheme_id": "uk_sic_2007",
+						"code_scheme_name": "UK SIC Classification 2007",
+						"uid": "uk_sic_2007-64999"
+					}
+				},
+				{
+					"industry_code": {
+						"code": "64.99",
+						"description": "Other financial service activities, except insurance and pension funding n.e.c.",
+						"code_scheme_id": "eu_nace_2",
+						"code_scheme_name": "European Community NACE Rev 2",
+						"uid": "eu_nace_2-6499"
+					}
+				},
+				{
+					"industry_code": {
+						"code": "6499",
+						"description": "Other financial service activities, except insurance and pension funding activities, n.e.c.",
+						"code_scheme_id": "isic_4",
+						"code_scheme_name": "UN ISIC Rev 4",
+						"uid": "isic_4-6499"
+					}
+				}],
+				"restricted_for_marketing": null,
+				"native_company_number": null
+			}
+		},
+		{
+			"company": {
+				"name": "MORGAN STANLEY & CO. INTERNATIONAL PLC",
+				"company_number": "02068222",
+				"jurisdiction_code": "gb",
+				"incorporation_date": "1986-10-28",
+				"dissolution_date": null,
+				"company_type": "Public Limited Company",
+				"registry_url": "https://beta.companieshouse.gov.uk/company/02068222",
+				"branch": null,
+				"branch_status": null,
+				"inactive": false,
+				"current_status": "Active",
+				"created_at": "2010-10-22T19:59:34+00:00",
+				"updated_at": "2018-11-26T18:23:15+00:00",
+				"retrieved_at": "2018-11-26T18:23:10+00:00",
+				"opencorporates_url": "https://opencorporates.com/companies/gb/02068222",
+				"previous_names": [{
+					"company_name": "MORGAN STANLEY & CO. INTERNATIONAL LIMITED",
+					"start_date": "1993-10-25",
+					"end_date": "2007-04-13"
+				},
+				{
+					"company_name": "MORGAN STANLEY INTERNATIONAL HOLDINGS LIMITED",
+					"start_date": "1986-10-28",
+					"end_date": "1993-10-25"
+				}],
+				"source": {
+					"publisher": "UK Companies House",
+					"url": "http://xmlgw.companieshouse.gov.uk/",
+					"terms": "UK Crown Copyright",
+					"retrieved_at": "2018-11-26T18:23:10+00:00"
+				},
+				"registered_address": {
+					"street_address": "Legal Department\n25 Cabot Square",
+					"locality": "Canary Wharf",
+					"region": "London",
+					"postal_code": "E14 4QA",
+					"country": "United Kingdom"
+				},
+				"registered_address_in_full": "Legal Department\n25 Cabot Square, Canary Wharf, London, E14 4QA",
+				"industry_codes": [{
+					"industry_code": {
+						"code": "66.12",
+						"description": "Security and commodity contracts brokerage",
+						"code_scheme_id": "uk_sic_2007",
+						"code_scheme_name": "UK SIC Classification 2007",
+						"uid": "uk_sic_2007-6612"
+					}
+				},
+				{
+					"industry_code": {
+						"code": "66.12",
+						"description": "Security and commodity contracts brokerage",
+						"code_scheme_id": "eu_nace_2",
+						"code_scheme_name": "European Community NACE Rev 2",
+						"uid": "eu_nace_2-6612"
+					}
+				},
+				{
+					"industry_code": {
+						"code": "6612",
+						"description": "Security and commodity contracts brokerage",
+						"code_scheme_id": "isic_4",
+						"code_scheme_name": "UN ISIC Rev 4",
+						"uid": "isic_4-6612"
+					}
+				}],
+				"restricted_for_marketing": null,
+				"native_company_number": null
+			}
+		},
+		{
+			"company": {
+				"name": "PEARSON PLC",
+				"company_number": "00053723",
+				"jurisdiction_code": "gb",
+				"incorporation_date": "1897-08-12",
+				"dissolution_date": null,
+				"company_type": "Public Limited Company",
+				"registry_url": "https://beta.companieshouse.gov.uk/company/00053723",
+				"branch": null,
+				"branch_status": null,
+				"inactive": false,
+				"current_status": "Active",
+				"created_at": "2010-10-22T23:43:10+00:00",
+				"updated_at": "2018-12-06T02:26:38+00:00",
+				"retrieved_at": "2018-12-04T10:38:09+00:00",
+				"opencorporates_url": "https://opencorporates.com/companies/gb/00053723",
+				"previous_names": [{
+					"company_name": "S. PEARSON & SON PLC",
+					"start_date": "1897-08-12",
+					"end_date": "1984-06-01"
+				}],
+				"source": {
+					"publisher": "UK Companies House",
+					"url": "http://xmlgw.companieshouse.gov.uk/",
+					"terms": "UK Crown Copyright",
+					"retrieved_at": "2018-12-04T10:38:09+00:00"
+				},
+				"registered_address": {
+					"street_address": "80 Strand\nLondon",
+					"locality": null,
+					"region": null,
+					"postal_code": "WC2R 0RL",
+					"country": "United Kingdom"
+				},
+				"registered_address_in_full": "80 Strand\nLondon, WC2R 0RL",
+				"industry_codes": [{
+					"industry_code": {
+						"code": "58.19",
+						"description": "Other publishing activities",
+						"code_scheme_id": "uk_sic_2007",
+						"code_scheme_name": "UK SIC Classification 2007",
+						"uid": "uk_sic_2007-5819"
+					}
+				},
+				{
+					"industry_code": {
+						"code": "58.19",
+						"description": "Other publishing activities",
+						"code_scheme_id": "eu_nace_2",
+						"code_scheme_name": "European Community NACE Rev 2",
+						"uid": "eu_nace_2-5819"
+					}
+				},
+				{
+					"industry_code": {
+						"code": "5819",
+						"description": "Other publishing activities",
+						"code_scheme_id": "isic_4",
+						"code_scheme_name": "UN ISIC Rev 4",
+						"uid": "isic_4-5819"
+					}
+				}],
+				"restricted_for_marketing": null,
+				"native_company_number": null
+			}
+		},
+		{
+			"company": {
+				"name": "THE GAP, INC.",
+				"company_number": "2157877",
+				"jurisdiction_code": "us_de",
+				"incorporation_date": "1988-04-15",
+				"dissolution_date": null,
+				"company_type": "Corporation",
+				"registry_url": null,
+				"branch": null,
+				"branch_status": null,
+				"inactive": null,
+				"current_status": null,
+				"created_at": "2011-10-19T16:29:26+00:00",
+				"updated_at": "2018-12-03T01:45:12+00:00",
+				"retrieved_at": "2018-05-09T06:40:28+00:00",
+				"opencorporates_url": "https://opencorporates.com/companies/us_de/2157877",
+				"previous_names": [],
+				"source": {
+					"publisher": "Delaware Department of State: Division of Corporations",
+					"url": "http://www.corp.delaware.gov/",
+					"retrieved_at": "2018-05-09T06:40:28+00:00"
+				},
+				"registered_address": null,
+				"registered_address_in_full": null,
+				"industry_codes": [],
+				"restricted_for_marketing": null,
+				"native_company_number": null
+			}
+		}],
+		"page": 1,
+		"per_page": 30,
+		"total_pages": 1,
+		"total_count": 6
+	}
+}

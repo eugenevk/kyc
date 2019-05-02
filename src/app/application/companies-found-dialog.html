@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Companies found on {{ source_label }}</h1>
+
+<mat-dialog-content>
+    <app-company search_mode="{{search_mode}}" source_key="{{source_key}}" company="{{company}}" jurisdiction="{{jurisdiction}}" (selected_company)="onSelected($event)" (results_received)="onResultsReceived($event)"></app-company>
+</mat-dialog-content>
+
+<mat-dialog-actions *ngIf="showActionButtons">
+    
+    <button mat-raised-button color="primary" (click)="select()" [disabled]="!company_selected">Select</button>
+    <button mat-raised-button (click)="cancel()">Cancel</button>
+
+</mat-dialog-actions>

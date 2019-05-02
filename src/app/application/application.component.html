@@ -1,0 +1,94 @@
+<div class="application" fxLayout="row" fxLayoutAlign="center center">
+    <div class="application-form" fxLayout="column">
+        <h2 class="text-center">Application</h2>
+
+        <div class="progress-bar" *ngIf="matchFound === undefined && showProgress">
+            <mat-progress-bar
+                class="progress-margin"
+                color="primary"
+                mode="indeterminate"
+            >
+            </mat-progress-bar>
+        </div>
+
+        <div *ngIf="errMsg" class="alert alert-danger"><i class="material-icons valign">build</i>&nbsp;Technical error: {{ errMsg }}</div>
+
+        <div *ngIf="!errMsg || errMsg !== ''" class="matching-message">
+            <div *ngIf="matchFound && matchFound !== undefined" class="alert alert-danger"><i class="material-icons valign">error_outline</i>&nbsp;Please contact the bank</div>
+            <div *ngIf="!matchFound && matchFound !== undefined" class="alert alert-success"><i class="material-icons valign">mood</i>&nbsp;Your application has been received successfully and will be processed</div>
+        </div>
+
+        <div class="personal-details">
+            <h5>Personal details</h5>
+            <mat-form-field>
+                <input matInput #applicantNameInput name="applicant_name" [(ngModel)]="application.applicant_name" placeholder="Your name" autofocus>
+                <button mat-button *ngIf="application?.applicant_name" matSuffix mat-icon-button (click)="application.applicant_name=''" tabindex="-1">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+        <div class="company-details">
+            <h5>Company details</h5>
+            <mat-form-field>
+                <input matInput name="company_search_name" [(ngModel)]="application.company_name" placeholder="Company name">
+                <button mat-button *ngIf="application?.company_name" matSuffix mat-icon-button (click)="application.company_name=''" tabindex="-1">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Jurisdiction</mat-label>
+                <mat-select matNativeControl [compareWith]="compareJurFn" [(ngModel)]="jurisdiction">
+                    <mat-option>All</mat-option>
+                    <mat-option *ngFor="let jurisdiction of jurisdictions" [value]="jurisdiction">{{ jurisdiction.full_name }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field *ngIf="application.company_id">
+                <input matInput placeholder="Company number" [(ngModel)]="application.company_id" disabled="true">
+            </mat-form-field>
+            <mat-form-field *ngIf="application.company_id">
+                <input matInput placeholder="Registered address" [(ngModel)]="application.registered_address" disabled="true">
+            </mat-form-field>
+            <div class="search-source" fxLayout="row" fxLayoutAlign="start">
+                <label id="source" class="radio-group-label">Source:</label>
+                <mat-radio-group aria-labelledby="source" [(ngModel)]="sourceChosen" disabled="true">
+                <!-- <mat-radio-group aria-labelledby="source" [(ngModel)]="sourceChosen" [disabled]="application.company_id"> -->
+                    <mat-radio-button *ngFor="let source of sources" [value]="source"><span class="radio-option-label">{{ source.label }}</span></mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="search-button" fxLayout="row" fxLayoutAlign="space-around">
+                <div class="search-toggle">
+                    <mat-slide-toggle name="search_online" [checked]="true" [(ngModel)]="search_online" tabindex="-1">Search online</mat-slide-toggle>
+                </div>
+                <div>
+                    <button mat-raised-button color="primary" class="button" (click)="searchCompanies(search_online, sourceChosen, application)" [disabled]="search_online ? (!application.company_name ? true : false) : false">Search
+                        <mat-icon>search</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="product-details">
+            <h5>Product/Service requested</h5>
+            <mat-form-field>
+                <mat-label>Product/Service</mat-label>
+                <mat-select name="product_chosen" [(ngModel)]="application.product_code">
+                    <mat-option>All</mat-option>
+                    <mat-option *ngFor="let product of products" [value]="product">{{ product.label }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <span *ngIf="application.product_code?.amount_needed">
+                <mat-form-field>
+                    <input matInput currencyMask name="amount" [(ngModel)]="application.amount" placeholder="Amount requested (€)">
+                </mat-form-field>
+            </span>
+        </div>
+
+        <br/>
+
+        <div class="text-center">
+            <span class="button-margin">
+                <button mat-raised-button color="primary" class="button" (click)="apply(application); result=true">Apply</button>
+            </span>
+            <button mat-raised-button (click)="clearForm()">Clear</button>
+        </div>
+    </div>
+</div>
